@@ -21,7 +21,7 @@ const rules = computed<Record<keyof FormModel, FormItemRule>>(() => ({
     }
 }))
 
-const model = reactive({
+const model = reactive<Api.Auth.LoginParams>({
     username: '',
     password: ''
 })
